@@ -16,7 +16,7 @@ RUN npm ci --only=production
 
 RUN npm run build
 
-ENV PORT 3000
+ENV PORT 3012
 ENV PORT 9229
 
 CMD ["node", "dist/main"]

@@ -41,7 +41,7 @@
     "@nestjs/platform-express": "^8.4.7",
     "@nestjs/schedule": "^1.0.1",
     "@nestjs/swagger": "^5.1.4",
-    "@nestjs/typeorm": "^8.1.4",
+    "@nestjs/typeorm": "^10.0.0",
     "bcryptjs": "^2.4.3",
     "class-validator": "^0.14.0",
     "dotenv": "^10.0.0",
@@ -98,6 +98,9 @@
       "json",
       "ts"
     ],
+    "moduleNameMapper": {
+      "^src/(.*)$": "<rootDir>/$1"
+    },
     "rootDir": "src",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {

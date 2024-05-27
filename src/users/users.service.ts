@@ -25,10 +25,8 @@ export class UsersService {
     return this.usersRepository.find();
   }
 
-  findOne(email: string): Promise<User> {
-    return this.usersRepository.findOne({
-      email: email,
-    });
+  findOne(email: string): Promise<User | undefined> {
+    return this.usersRepository.findOne({ where: { email } });
   }
 
   async remove(id: string): Promise<void> {

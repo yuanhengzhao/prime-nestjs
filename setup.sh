@@ -39,7 +39,7 @@ if [ $? -ne 0 ]; then
 fi
 
 log "👐 Install dependencies"
-npm install
+npm install --force
 if [ $? -ne 0 ]; then
   err "⛔️ NPM install failed."
 fi

@@ -19,10 +19,10 @@ export const dbConfig = (): PostgresConnectionOptions => ({
   migrationsRun: false,
   logging: false,
   migrations: [join(__dirname, '../migrations/**/*{.ts,.js}')],
-  cli: {
-    migrationsDir: join(__dirname, '../migrations'),
-    entitiesDir: join(__dirname, '../**/*.entity{.ts,.js}'),
-  },
+  // cli: {
+  //   migrationsDir: join(__dirname, '../migrations'),
+  //   entitiesDir: join(__dirname, '../**/*.entity{.ts,.js}'),
+  // },
 });
 
 if (process.env.NODE_ENV === 'development') {
